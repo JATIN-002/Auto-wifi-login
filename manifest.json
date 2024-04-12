@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "Auto Login",
+    "version": "1.0",
+    "description": "Automatically logs in to IIT Varanasi's Wi-Fi network.",
+    "permissions": [
+      "activeTab",
+      "storage"
+    ],
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "content_scripts": [
+      {
+        "matches": ["http://192.168.249.1:1000/fgtauth*"],
+        "js": ["content.js"]
+      }
+    ],
+    "background": {
+      "service_worker": "background.js"
+    }
+  }
+  
