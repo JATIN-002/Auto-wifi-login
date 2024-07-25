@@ -1,1 +1,1 @@
-Chrome extension for auto signing to college wifi.
+Chrome extension for auto sign-in/login to college wifi.
